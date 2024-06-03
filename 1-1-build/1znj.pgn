@@ -1,0 +1,9 @@
+package require psfgen
+topology top_all27_prot_lipid.inp
+alias residue HIS HSE 
+alias atom ILE CD1 CD
+segment U {pdb znjp.pdb}
+coordpdb znjp.pdb U
+guesscoord
+writepdb 1znj.pdb
+writepsf 1znj.psf
